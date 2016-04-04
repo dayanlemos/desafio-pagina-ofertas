@@ -1,0 +1,162 @@
+body{
+    color: #656565;
+    font-family: "Gotham","Helvetica Neue",Arial,Helvetica,sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1.4;
+}
+
+.offer-options{
+    margin: auto;
+    width: 830px;
+}
+
+.offer-header{
+    margin: 30px auto 0;
+    width: 830px;
+}
+
+.offer-gallery{
+    margin: auto;
+    width: 830px;
+    color: #2A2A2A;
+}
+
+.offer-gallery .thumbnail{
+    border: none;
+    padding: 2px;
+}
+
+.offer-gallery .thumbnail-content{
+    display: inline-block;
+    padding: 0;
+}
+
+.offer-gallery .thumbnail img{
+    width: 99px;
+    height: 65px;
+}
+
+.gallery-banner {
+    margin: 2px;
+    width: 820px;
+}
+.gallery-banner-content {
+    height: 330px;
+    overflow: hidden;
+}
+
+
+.offer-option{
+    border: 1px solid #e0e0e0;
+    border-radius: 3px;
+    margin-bottom: 30px;
+    margin-left: 0;
+    margin-right: 0;
+    min-height: 89px;
+    width: 100%;
+}
+.offer-price{
+    font-size: 30px;
+    font-weight: bold;
+}
+.border{
+    border-color: #e0e0e0;
+    border-style: solid;
+}
+.border-left{
+    border-width: 0 0 0 1px;
+}
+.border-right{
+    border-width: 0 1px 0 0;
+}
+.border-top{
+    border-width: 1px 0 0 0;
+}
+.border-bottom{
+    border-width: 0 0 1px 0;
+}
+
+.row{
+    min-height: 90px;
+    width: 100%;
+    margin-left: 0;
+}
+.row div{
+    display: flex;
+    padding: 0 10px;
+}
+
+.no-results {
+    border: 1px solid #e0e0e0;
+    border-radius: 3px;
+    margin-bottom: 30px;
+    padding: 20px;
+}
+.button {
+    background-color: #ff7900;
+    border: 1px solid #ff7900;
+    border-radius: 3px;
+    box-shadow: 0 -1px 0 #eb7409 inset;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: 600;
+    line-height: 14px;
+    padding: 5px 15px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: background 0.33s ease 0s;
+    vertical-align: middle;
+    white-space: nowrap;
+    margin: 10px 0;
+    width: 125px
+}
+.button:hover, .button.hover, .button:focus {
+    background-color: #ff8c24;
+    border: 1px solid #ff891f;
+    box-shadow: 0 -1px 0 #eb7409 inset;
+    color: #fff;
+    outline: 0 none;
+}
+.button:active, .button.active {
+    background-color: #ff7900;
+    border: 1px solid #ff7900;
+    box-shadow: -1px 0 4px rgba(0, 0, 0, 0.2) inset;
+    color: #fff;
+}
+
+a.button:hover{
+    text-decoration: none;
+}
+span.daily {
+    font-size: 20px;
+}
+
+.filters{
+    min-height: 35px;
+    float: left;
+    width: 60%;
+    margin: 10px 0 0;
+}
+.filters select{
+    position: relative;
+    top: -8px;
+}
+
+
+.offer-header h2, .offer-header p {
+    margin: 2px 0;
+}
+
+
+.align-center{
+    align-items: center;
+    text-align: center;
+}
+.block{
+    display: block !important;
+}
+.left{
+    float: left;
+}

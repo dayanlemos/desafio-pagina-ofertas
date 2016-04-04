@@ -1,0 +1,112 @@
+<div class="offer-header">
+    <h2>{{offer.title}}</h2>
+    <p>{{offer.location}}</p>
+    <p>{{offer.description}}</p>
+</div>
+
+
+<div class="offer-gallery">
+    <br><br><br>
+    
+    <div class="row gallery-banner-content" ng-init="activePhoto = offer.photos[0]">
+        <a href="{{activePhoto}}" data-lightbox="roadtrip">
+            <img src="{{activePhoto}}" class="gallery-banner" />
+        </a>
+    </div>
+    <div class="row">
+        <div class="thumbnail-content" ng-repeat="photo in offer.photos">
+            <a href="{{photo}}" ng-click="setActivePhoto(photo)" data-lightbox="roadtrip" class="thumbnail">
+                <img src="{{photo}}" />
+            </a>
+        </div>
+    </div>
+
+</div>
+
+
+<div class="offer-options">
+
+    <div style="min-height: 30px">
+
+        <h4 style="float:left; width:40%">ESCOLHA SUA MELHOR OPÇÃO</h4>
+
+        <!-- Filtros ------------------------------------------------->
+        <div class="filters">
+
+            <div class="form-group" style="width: 62%; float:left; margin-bottom: 0">
+                <label class="left">SAÍDAS:&nbsp;</label>
+                <select class="form-control left" style="width: 200px" ng-model="filterOrigin">
+                    <option value=" " ng-selected="true"><strong>Todas</strong></option>
+                    <option ng-repeat="origin in origins">{{origin}}</option>
+                </select>
+            </div>
+            <div class="form-group" style="width: 38%; float:right;  margin-bottom: 0">
+                <label class="left">Nº DE DIÁRIAS:&nbsp;</label>
+                <select class="form-control left" style="width: 80px" ng-model="filterDailyNumber" ng-change="filterByDailyNumber(offer, filterDailyNumber)">
+                    <option value=" " ng-selected="true">Todas</option>
+                    <option ng-repeat="daily in dailyOptions">{{daily}}</option>
+                </select>
+            </div>
+
+
+        </div>
+        <!-- -->
+    </div>
+
+
+    <hr>
+
+    <div class="offer-option row" ng-repeat="option in offerOptions | orderBy: 'price' | filter:filterOrigin">
+
+        <div class="flex">
+
+            <div class="row">
+                <div class="col-xs-16 col-sm-12 col-md-12 block">
+                    <strong>{{option.title}}</strong>
+                    <br>
+                    <br>
+                    <span>{{option.description}}</span>
+                </div>
+
+                <div class="col-xs-9 col-sm-3 col-md-4 border border-left block">
+                    <b>Saídas:</b>
+                    <br>
+                    <br>
+                    <div class="align-center" style="padding: 0" ng-repeat="origin in option.from">{{origin}}</div>
+
+                </div>
+
+                <div class="col-xs-9 col-sm-3 col-md-3 flex align-center border border-left block">
+                    <div class="block">
+                        <span class="daily">{{option.daily}} </span>
+                        <span class="daily">&nbsp;&#9788;</span><br>
+                        <span> Diárias</span>
+                    </div>
+                    -
+                    <div class="block">
+                        <span class="daily">1</span>
+                        <span class="daily">&nbsp;&#128697;</span><br>
+                        <span> Pessoa</span>
+                    </div>
+                </div>
+                <div class="col-xs-14 col-sm-4 col-md-4 flex align-center border border-left block">
+                    <span>Por apenas:</span><br>
+                    <span><strong>R$ </strong></span><span class="offer-price">{{option.price}}</span><br>
+                    <span>+ taxas em até 10x</span>
+                    <div>
+                        <a href="#" class="button">
+                            Quero ir
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <div>
+        <br><br><br><br>
+    </div>
+
+</div>
