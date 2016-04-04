@@ -1,6 +1,6 @@
-<h2>Desafio Página de Ofertas<h2>
+<h2>Desafio Página de Ofertas</h2>
 
-Comandos para baixar e rodar a aplicação
+<h4>Comandos para baixar e rodar a aplicação</h4>
 
 $ git clone https://github.com/dayanlemos/desafio-pagina-ofertas.git
 
@@ -10,10 +10,13 @@ $ npm install http-server -g
 
 $ http-server -p 8000
 
-$ start http://localhost:8000/index.html //Windows
-ou 
-$ open http://localhost:8000/index.html //Mac OS X
-ou 
-$ xdg-open http://localhost:8000/index.html //Ubuntu
+$ xdg-open http://localhost:8000/index.html //Ubuntu, ou
 
-...
+$ open http://localhost:8000/index.html //Mac OS X, ou
+
+$ start http://localhost:8000/index.html //Windows
+ 
+
+ 
+
+
