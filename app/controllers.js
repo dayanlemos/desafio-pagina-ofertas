@@ -1,5 +1,5 @@
 // CONTROLLERS
-offersApp.controller('homeController', ['$scope', 'offersService', function($scope, offersService) {
+offersApp.controller('homeController', ['$scope', function($scope) {
 
 }]);
 
