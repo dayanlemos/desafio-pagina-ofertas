@@ -16,6 +16,13 @@ $ open http://localhost:8000/index.html //Mac OS X, ou
 
 $ start http://localhost:8000/index.html //Windows
  
+ 
+<h4>Testes com Karma</h4>
+$ npm install -g karma-cli
+
+$ npm install -g phantomjs
+
+$ karma start karma.conf.js 
 
  
 
